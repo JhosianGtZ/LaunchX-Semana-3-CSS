@@ -17,6 +17,10 @@
     --yellow: #FFD012;
 }
 
+.landing {
+    overflow: hidden;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -24,6 +28,8 @@
     width: 100%;
     height: 100px;
     background: linear-gradient(270deg, #E6F4FC 48.49%, #FFFFFF 49.85%);
+    position: fixed;
+    box-shadow: 0px 4px 4px rgba(40, 72, 198, 0.2);
 }
 
 .logo {
@@ -47,13 +53,13 @@
     color: var(--grey);
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--blue-bright);
     text-decoration: underline;
     transition: all .5s ease-in-out;
 }
 
-.btn{
+.btn {
     display: inline-block;
     height: 50px;
     width: 160px;
@@ -66,30 +72,31 @@
     border-radius: 5px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.btn:hover{
+
+.btn:hover {
     background: var(--blue-dark);
     transition: all .5s ease-in-out;
 }
 
 /* Landing */
 
-.landing{
+.landing {
     display: flex;
 }
 
-.landing-text{
+.landing-text {
     width: 50%;
-    margin: 60px 0 0 60px ;
+    margin: 190px 0 0 60px;
 }
 
-.landing-text h2{
+.landing-text h2 {
     color: var(--blue-dark);
     width: 414px;
     font-size: 55px;
     margin-bottom: 30px;
 }
 
-.landing-text p{
+.landing-text .paragraph {
     font-size: 16px;
     font-weight: bold;
     line-height: 32px;
@@ -98,27 +105,44 @@
     margin-bottom: 60px;
 }
 
-.landing-icon{
-    
+.landing-image {
+    margin-top: 90px;
+}
+
+.landing-icon {
+
     display: flex;
     align-items: center;
     width: 170px;
 }
-.landing-icon-2{
-    
+
+.landing-icon-2 {
+
     display: flex;
     align-items: center;
     margin-left: 45px;
     width: 170px;
 }
 
-.landing-icon span, .landing-icon-2 span{
+.landing-icon-3 {
+
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+
+
+}
+
+.landing-icon span,
+.landing-icon-2 span,
+.landing-icon-3 span {
     color: var(--blue-dark);
     margin-left: 1rem;
     font-size: 14px;
     font-weight: 600;
 }
-.icon-1{
+
+.icon-1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,6 +155,69 @@
     filter: drop-shadow(0px 2px 2px rgba(255, 208, 18, 0.3));
 
 }
-.icon-1 i{
+
+.icon-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: rgba(43, 75, 201, 0.1);
+    text-align: center;
+    color: var(--blue-bright);
+    border-radius: 5px;
+    filter: drop-shadow(0px 2px 2px rgba(255, 208, 18, 0.3));
+
+}
+
+.icon-1 i {
     font-size: 25px;
+}
+
+.info-container {
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
+    width: 900px;
+    height: 140px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 4px 4px rgba(40, 72, 198, 0.2);
+    display: flex;
+    padding: 35px;
+}
+
+.info-icon-text {
+    display: flex;
+    align-items: center;
+}
+
+
+.info-icon-1 , .info-icon-2 , .info-icon-3 {
+    width: 210px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-icon-text span {
+    color: var(--blue-dark);
+    margin-left: 1rem;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+}
+
+.info-icon-1 p {
+    
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    color: var(--blue-dark);
+    text-align: left;
+    margin-left: 90px;
+}
+
+.info-btn{
+    margin-left: 2rem;
 }
